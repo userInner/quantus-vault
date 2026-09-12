@@ -2,11 +2,11 @@
 
 An independent, open-source browser extension wallet for Quantus. **Not an official Quantus product.**
 
-[Download v0.1.15](https://github.com/userInner/quantus-vault/releases/tag/v0.1.15) · [中文说明](README.zh-CN.md) · [Security](SECURITY.md) · [Privacy status](PRIVACY-STATUS.md)
+[Download v0.1.16](https://github.com/userInner/quantus-vault/releases/tag/v0.1.16) · [中文说明](README.zh-CN.md) · [Security](SECURITY.md) · [Privacy status](PRIVACY-STATUS.md)
 
 ## Install in Chrome or Edge
 
-1. Download **`quantus-vault-extension-v0.1.15.zip`** from the release assets. GitHub's automatic “Source code” downloads are not installable extensions.
+1. Download **`quantus-vault-extension-v0.1.16.zip`** from the release assets. GitHub's automatic “Source code” downloads are not installable extensions.
 2. Extract the ZIP. The `quantus-vault-extension` folder must contain `manifest.json`.
 3. Open `chrome://extensions` or `edge://extensions`, enable **Developer mode**, and select **Load unpacked**.
 4. Select that extracted folder and pin Quantus Vault to the toolbar.
@@ -16,7 +16,7 @@ To update, extract into the same extension folder and press **Reload** on the ex
 
 The release includes the JavaScript and WASM files required to run. No Node.js or Rust installation is needed to install the extension. This is an unpacked extension release, not a Chrome Web Store or Edge Add-ons listing.
 
-## What works in v0.1.15
+## What works in v0.1.16
 
 | Feature | Status |
 | --- | --- |

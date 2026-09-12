@@ -1,6 +1,6 @@
 # Security policy
 
-This project has not received an independent security audit. v0.1.15 is the initial public release; earlier local development versions are not supported. The current format does not migrate old encrypted vaults.
+This project has not received an independent security audit. v0.1.16 is the initial public release; earlier local development versions are not supported. The current format does not migrate old encrypted vaults.
 
 ## Report a vulnerability
 

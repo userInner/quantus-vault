@@ -9,7 +9,7 @@ await fs.copyFile('privacy-wasm/quantus_privacy_keys_bg.wasm',`${out}/quantus_pr
 await fs.copyFile('wasm/quantus_wasm_bg.wasm',`${out}/quantus_wasm_bg.wasm`);
 await build({entryPoints:['src/popup.ts','src/crypto-worker.ts','src/privacy-keys-worker.ts','src/privacy-prover-worker.ts'],bundle:true,format:'esm',outdir:out,target:'chrome120',platform:'browser',minify:true,sourcemap:false,legalComments:'external',logLevel:'info'});
 const wasm=await fs.readFile('wasm/quantus_wasm_bg.wasm');
-await fs.writeFile(`${out}/BUILD_INFO.json`,JSON.stringify({version:'0.1.15',sourceCommit:(spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).stdout??'').trim()||null,upstreamCommit:(await fs.readFile('vendor/quantus-wasm/UPSTREAM_COMMIT','utf8')).trim(),wasmSha256:createHash('sha256').update(wasm).digest('hex'),runtimePins:JSON.parse(await fs.readFile('src/core/networks.json','utf8'))},null,2));
+await fs.writeFile(`${out}/BUILD_INFO.json`,JSON.stringify({version:'0.1.16',sourceCommit:(spawnSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).stdout??'').trim()||null,upstreamCommit:(await fs.readFile('vendor/quantus-wasm/UPSTREAM_COMMIT','utf8')).trim(),wasmSha256:createHash('sha256').update(wasm).digest('hex'),runtimePins:JSON.parse(await fs.readFile('src/core/networks.json','utf8'))},null,2));
 await fs.mkdir('.preview',{recursive:true});await fs.cp(out,'.preview',{recursive:true});await fs.rm('.preview/manifest.json',{force:true});
 await build({entryPoints:['src/preview.ts'],bundle:true,format:'esm',outfile:'.preview/preview.js',target:'chrome120',platform:'browser',minify:false,logLevel:'info'});
 const html=await fs.readFile('public/popup.html','utf8');await fs.writeFile('.preview/index.html',html.replace('src="popup.js"','src="preview.js"'));

@@ -4,7 +4,7 @@
 
 ## 安装
 
-1. 从 [v0.1.15 发布页](https://github.com/userInner/quantus-vault/releases/tag/v0.1.15) 下载 `quantus-vault-extension-v0.1.15.zip`。不要把 GitHub 自动生成的源码压缩包当作插件安装包。
+1. 从 [v0.1.16 发布页](https://github.com/userInner/quantus-vault/releases/tag/v0.1.16) 下载 `quantus-vault-extension-v0.1.16.zip`。不要把 GitHub 自动生成的源码压缩包当作插件安装包。
 2. 解压后，确认 `quantus-vault-extension` 文件夹内有 `manifest.json`。
 3. Chrome 打开 `chrome://extensions`，Edge 打开 `edge://extensions`，开启开发者模式。
 4. 点击“加载已解压的扩展程序”，选择上述文件夹。

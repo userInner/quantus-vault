@@ -15,7 +15,7 @@ const forbidden=['human snow truck virus','orchard answer curve patient','Browse
 for(const p of ['popup.js','crypto-worker.js','privacy-keys-worker.js','privacy-prover-worker.js']){const source=await fs.readFile(path.join(dist,p),'utf8');for(const bad of forbidden)if(source.includes(bad))throw Error('Unexpected test content in release');}
 if(manifest.permissions.join()!=='storage'||manifest.content_scripts||manifest.background||manifest.web_accessible_resources)throw Error('Unexpected permission or entrypoint');
 if((await fs.readdir(dist)).some(p=>/preview|test|harness/.test(p)))throw Error('Development-only file in release');
-for(const file of ['README.md','README.zh-CN.md','SECURITY.md','VERIFICATION.md','LICENSE','AUDIT.md','RELEASE-CHECK.md','PROVENANCE.md','PRIVACY-STATUS.md'])await fs.copyFile(file,path.join(dist,file));
+for(const file of ['README.md','README.zh-CN.md','SECURITY.md','VERIFICATION.md','LICENSE','NOTICE','AUDIT.md','RELEASE-CHECK.md','PROVENANCE.md','PRIVACY-STATUS.md'])await fs.copyFile(file,path.join(dist,file));
 const binary=`quantus-vault-extension-v${version}.zip`,source=`quantus-vault-source-v${version}.zip`;
 command('python3',['-c',`from pathlib import Path
 import zipfile,sys

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Quantus Vault \u2014 Independent Wallet",
   "short_name": "Quantus Vault",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "minimum_chrome_version": "120",
   "description": "Independent Quantus wallet with local encryption, standard transfers and private asset scanning.",
   "action": {

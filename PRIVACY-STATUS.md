@@ -1,4 +1,4 @@
-# Privacy status — v0.1.15
+# Privacy status — v0.1.16
 
 ## Available
 

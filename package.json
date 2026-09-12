@@ -1,6 +1,6 @@
 {
   "name": "quantus-vault",
-  "version": "0.1.15",
+  "version": "0.1.16",
   "description": "Independent Quantus browser extension wallet",
   "scripts": {
     "build": "node scripts/build.mjs",

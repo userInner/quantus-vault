@@ -145,7 +145,7 @@ export class WalletApp {
     const network=this.vault && !['locked','fatal'].includes(this.page)?btn(this.network==='planck'?'PLANCK 测试网':'QTC 主网',()=>this.go('network'),'network-pill'):null;
     return el('header',{class:'topbar'},el('div',{class:'brand'},el('div',{class:'mark','aria-hidden':'true'}),el('div',{},el('div',{class:'wordmark'},'QUANTUS'),el('small',{},'INDEPENDENT WALLET'))),el('div',{class:'header-controls'},network,language));
   }
-  private footer():HTMLElement {return el('footer',{class:'footer'},el('span',{class:'row'},icon('shield'),'密钥仅在本机处理'),el('span',{},'独立开发 · v0.1.15'));}
+  private footer():HTMLElement {return el('footer',{class:'footer'},el('span',{class:'row'},icon('shield'),'密钥仅在本机处理'),el('span',{},'独立开发 · v0.1.16'));}
   private title(text:string,back='home'):HTMLElement {return el('div',{class:'subhead'},el('button',{type:'button',class:'icon-button','aria-label':'返回',onClick:()=>this.go(back)},icon('back')),el('h1',{},text));}
   private passField(label='解锁密码',placeholder='至少 8 个字符'):ReturnType<typeof field>{return field(label,{type:'password',placeholder,minlength:MIN_PASSWORD_LENGTH,maxlength:256,'aria-label':label});}
   private checkbox(text:string):{node:HTMLLabelElement;input:HTMLInputElement}{const input=el('input',{type:'checkbox'});return {input,node:el('label',{class:'check-row'},input,el('span',{},text))};}

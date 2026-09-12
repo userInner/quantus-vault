@@ -1,4 +1,4 @@
-# Verification for v0.1.15
+# Verification for v0.1.16
 
 ## Automated checks
 

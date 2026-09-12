@@ -5,7 +5,7 @@
   "productionScanEnabled": true,
   "productionSendEnabled": false,
   "cargoLockSha256": "cf5ad9c3662c2f464e3b32925cdad091bf93a972fce2ed8588d1a5e4a4fdd887",
-  "walletVersion": "0.1.15",
+  "walletVersion": "0.1.16",
   "productionEncryptedJournalEnabled": true,
   "sourceOnlyTransferOrchestration": false,
   "productionLocalProverEnabled": true,
