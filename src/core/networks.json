@@ -1,0 +1,29 @@
+{
+  "planck": {
+    "id": "planck",
+    "name": "Planck 测试网",
+    "symbol": "PLK",
+    "endpoints": [
+      "https://a1-planck.quantus.cat"
+    ],
+    "genesis": "0x4901bf5c57fd3f9e726af399c763de6670dbdb115a91c0237e173f16eef65e72",
+    "specVersion": 148,
+    "transactionVersion": 6,
+    "metadataSha256": "ee374bae35e2b1721cff1c0c63b727a1c0303c781fe8ecf492170344a38a9853",
+    "signing": true
+  },
+  "mainnet": {
+    "id": "mainnet",
+    "name": "Quantus 主网",
+    "symbol": "QTC",
+    "endpoints": [
+      "https://rpc1-mainnet.quantus.com",
+      "https://rpc2-mainnet.quantus.com"
+    ],
+    "genesis": "0xfb5487c0be6ae4ade2d41d16e50465129861636c2b8d61fa94d7a19631626fba",
+    "specVersion": 152,
+    "transactionVersion": 6,
+    "metadataSha256": "5f44e1213154244850eaca65dd83f0ca6b03dd58710d9d8741a006cd1bbacf5f",
+    "signing": true
+  }
+}

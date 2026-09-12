@@ -1,0 +1,49 @@
+[package]
+name = "quantus-privacy-keys"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+[lib]
+crate-type = ["cdylib", "rlib"]
+[dependencies]
+qp-rusty-crystals-hdwallet = "=4.1.1"
+wasm-bindgen = "=0.2.117"
+hex = "0.4"
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+getrandom = { version = "0.2", features = ["js"] }
+[dependencies.qp-wormhole-circuit]
+version = "=4.3.0"
+default-features = false
+features = ["std"]
+[dependencies.qp-zk-circuits-common]
+version = "=4.3.0"
+default-features = false
+features = ["std"]
+[dependencies.qp-poseidon-core]
+version = "=3.1.0"
+[dependencies.plonky2]
+package = "qp-plonky2"
+version = "=1.5.5"
+default-features = false
+features = ["std", "rand"]
+[dependencies.getrandom04]
+package = "getrandom"
+version = "0.4"
+features = ["wasm_js"]
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+[dependencies.serde_json]
+version = "1"
+[dependencies.qp-wormhole-prover]
+version = "=4.3.0"
+default-features = false
+features = ["std"]
+[dependencies.qp-wormhole-aggregator]
+version = "=4.3.0"
+default-features = false
+features = ["std"]
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1

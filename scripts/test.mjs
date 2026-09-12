@@ -1,0 +1,3 @@
+import {build}from'esbuild';import {spawnSync}from'node:child_process';
+await build({entryPoints:['tests/security.test.ts','tests/privacy-discovery.test.ts','tests/privacy-scanner.test.ts','tests/privacy-indexer.test.ts','tests/privacy-flow.test.ts','tests/privacy-batches.test.ts'],bundle:true,packages:'external',platform:'node',format:'esm',target:'node22',outdir:'.test-build',outExtension:{'.js':'.mjs'}});
+const result=spawnSync(process.execPath,['--test','.test-build/security.test.mjs','.test-build/privacy-discovery.test.mjs','.test-build/privacy-scanner.test.mjs','.test-build/privacy-indexer.test.mjs','.test-build/privacy-flow.test.mjs','.test-build/privacy-batches.test.mjs'],{stdio:'inherit'});process.exit(result.status??1);

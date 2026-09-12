@@ -1,0 +1,37 @@
+{
+  "name": "quantus-vault",
+  "version": "0.1.15",
+  "description": "Independent Quantus browser extension wallet",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "tsc -p tsconfig.json",
+    "test": "node scripts/test.mjs",
+    "preview": "node scripts/serve.mjs",
+    "build:wasm": "cd vendor/quantus-wasm && wasm-pack build --release --target web --out-dir ../../wasm --no-pack --no-opt --locked",
+    "test:browser:build": "node scripts/browser-tests.mjs",
+    "build:privacy:wasm": "wasm-pack build vendor/quantus-privacy-keys --release --target web --out-dir ../../privacy-wasm --no-pack --no-opt --locked",
+    "test:privacy:browser:build": "node scripts/privacy-build.mjs",
+    "test:privacy:rust": "cargo test --locked --manifest-path vendor/quantus-privacy-keys/Cargo.toml",
+    "test:privacy:proof:browser:build": "node scripts/privacy-proof-browser.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@polkadot/types": "16.5.6",
+    "@polkadot/types-codec": "16.5.6",
+    "@polkadot/util": "14.0.3",
+    "@polkadot/util-crypto": "14.0.3",
+    "@scure/bip39": "2.4.0",
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.2.9",
+    "@types/node": "22.20.2",
+    "@types/qrcode": "1.5.6",
+    "esbuild": "0.28.2",
+    "typescript": "7.0.2"
+  },
+  "private": true,
+  "type": "module"
+}

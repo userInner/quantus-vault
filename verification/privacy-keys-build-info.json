@@ -1,0 +1,14 @@
+{
+  "hdwallet": "4.1.1",
+  "wormhole": "4.3.0",
+  "wasmSha256": "35ca47cd1b5822d55e49af2ec96e6b20b3d6e5dceb18eb3246dc374e821bdd5e",
+  "productionScanEnabled": true,
+  "productionSendEnabled": false,
+  "cargoLockSha256": "cf5ad9c3662c2f464e3b32925cdad091bf93a972fce2ed8588d1a5e4a4fdd887",
+  "walletVersion": "0.1.15",
+  "productionEncryptedJournalEnabled": true,
+  "sourceOnlyTransferOrchestration": false,
+  "productionLocalProverEnabled": true,
+  "productionBatchPreparationEnabled": true,
+  "planckIndexer": "https://sub2.quantus.com/v1/graphql"
+}

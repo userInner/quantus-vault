@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-12T03:10:55.186Z",
+  "readOnly": true,
+  "results": [
+    {
+      "endpoint": "https://a1-planck.quantus.cat",
+      "status": 200,
+      "data": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0x4901bf5c57fd3f9e726af399c763de6670dbdb115a91c0237e173f16eef65e72"
+      }
+    },
+    {
+      "endpoint": "https://rpc1-mainnet.quantus.com",
+      "status": 200,
+      "data": {
+        "jsonrpc": "2.0",
+        "id": 1,
+        "result": "0xfb5487c0be6ae4ade2d41d16e50465129861636c2b8d61fa94d7a19631626fba"
+      }
+    },
+    {
+      "endpoint": "https://sub2.quantus.com/v1/graphql",
+      "status": 200,
+      "data": {
+        "data": {
+          "block": [
+            {
+              "height": 0,
+              "hash": "0x4901bf5c57fd3f9e726af399c763de6670dbdb115a91c0237e173f16eef65e72"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

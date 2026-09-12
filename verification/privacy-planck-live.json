@@ -1,0 +1,34 @@
+{
+  "checkpoint": {
+    "genesis": "0x4901bf5c57fd3f9e726af399c763de6670dbdb115a91c0237e173f16eef65e72",
+    "blockHash": "0xad100dd7176eed874f95bfd0d2cdf6c3a148382db50460a401ccd855df5b5c45",
+    "height": 1089470
+  },
+  "discovery": {
+    "genesis": "0x4901bf5c57fd3f9e726af399c763de6670dbdb115a91c0237e173f16eef65e72",
+    "blockHash": "0xad100dd7176eed874f95bfd0d2cdf6c3a148382db50460a401ccd855df5b5c45",
+    "indexedThrough": 1089470,
+    "complete": true,
+    "usedIds": [
+      "0x827c084d2e64ee966c14067023c536f72b82411d66387283451a4605750b5f02"
+    ]
+  },
+  "credits": [
+    {
+      "id": "0000541681-7057d-000009",
+      "owner": {
+        "branch": 0,
+        "index": 0,
+        "id": "0x827c084d2e64ee966c14067023c536f72b82411d66387283451a4605750b5f02"
+      },
+      "amount": "1000000000000",
+      "leafIndex": "1267087",
+      "transferCount": "0",
+      "block": 541681,
+      "blockHash": "0x7057d21ae8c15c2f0e376ccf914f28f00dedfd729de700ea5b880bca012cbf89",
+      "status": "unverified"
+    }
+  ],
+  "readOnly": true,
+  "ownedFunds": false
+}

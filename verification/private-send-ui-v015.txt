@@ -1,0 +1,11 @@
+2026-09-12 · Browser tests with public fixtures; no user secrets or financial transactions.
+PASS: 15 simulated credits totaling 1.5 QTC produce a 3-batch payment of 1.4 QTC, fees 0.03, change 0.07.
+PASS: batches display 0.69, 0.69 and 0.02 QTC recipient amounts with separate fees/change.
+PASS: all inputs reserved together; only the first batch exposes local proof generation.
+PASS: explicit lock followed by unlock and rescan preserves all three reservations (1.5 QTC reserved, 0 unreserved).
+PASS: group progress restores; cancelling remaining unbroadcast batches marks all three cancelled without claiming any finalized payment.
+PASS: direct browser prover creates/verifies 151156-byte proof in 50615 ms, then cancellation terminates a second job.
+PASS: production prepareReservedPrivateBatch service (synthetic RPC, real witness builder and WASM) creates immutable review in 50551 ms; production broadcast gate rejects sending before any network call.
+Live Planck RPC and sub2 indexer genesis match. Read-only checkpoint/credit probe completed at block 1089470 (verification/privacy-planck-live.json).
+Funded receive/send/change/restore acceptance: NOT RUN. No funded test wallets supplied. Broadcast remains closed in UI, transfer service and RPC layer.
+PASS: full live Planck browser recovery scan (actual RPC/indexer, public mnemonic) completed at block 1089471: 0 owned private credits, 0 balance. This is a real read-only scan, not a funded receipt test.

@@ -1,0 +1,10 @@
+{
+  "UPSTREAM_COMMIT": "3ab3240c7b6ff964aa2c4a0f2fcd678b970f72f9c20bd40e8976221fa7b9237e",
+  "account_discovery_service.dart": "f49185b3b6a8f2ab4e9182220f0f69b030114dae245fbde44f3620347c4f63c3",
+  "crypto.rs": "863bf5955310c715422e5cbe5d963f9f740fbd11e1c681adc2d5bbc1b735e34e",
+  "encrypted_account_service.dart": "dd4813a4544d322c02d0126b7f9fc0b1913b1d6e8acf96c083301c27c0e97279",
+  "hd_wallet_service.dart": "8fa14baa24e90388b9a4d6434e35b5bc064c13d29fd9d4690206b004fbccfddf",
+  "wormhole.rs": "7bd7b18c2bf2f82e69645aa0da4a13fd408ef73f7415535cc21a243b84998bdc",
+  "wormhole_send_service.dart": "25963277e76860f466c3b112a4edf8c17444dc4430d2ab1c006b7b6e2c09dde7",
+  "wormhole_utxo_service.dart": "d8a845f56222121ef1db72645c23fd9b415d1469240aeafe7dafb7f080fd0f19"
+}

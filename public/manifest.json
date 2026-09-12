@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Quantus Vault \u2014 Independent Wallet",
+  "short_name": "Quantus Vault",
+  "version": "0.1.15",
+  "minimum_chrome_version": "120",
+  "description": "Independent Quantus wallet with local encryption, standard transfers and private asset scanning.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Quantus Vault",
+    "default_icon": {
+      "16": "icons/16.png",
+      "32": "icons/32.png",
+      "128": "icons/128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://a1-planck.quantus.cat/*",
+    "https://rpc1-mainnet.quantus.com/*",
+    "https://rpc2-mainnet.quantus.com/*",
+    "https://sqm.quantus.com/*",
+    "https://sub2.quantus.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self' https://a1-planck.quantus.cat https://rpc1-mainnet.quantus.com https://rpc2-mainnet.quantus.com https://sqm.quantus.com https://sub2.quantus.com; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+  }
+}

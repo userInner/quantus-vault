@@ -1,0 +1,362 @@
+
+> quantus-vault@0.1.15 test
+> node scripts/test.mjs
+
+TAP version 13
+# Subtest: 15 inputs form three conserving batches with distinct inputs and exact aggregate fees
+ok 1 - 15 inputs form three conserving batches with distinct inputs and exact aggregate fees
+  ---
+  duration_ms: 2.752917
+  type: 'test'
+  ...
+# Subtest: all batch reservations persist in one write and survive reopening with their amounts
+ok 2 - all batch reservations persist in one write and survive reopening with their amounts
+  ---
+  duration_ms: 11.964083
+  type: 'test'
+  ...
+# Subtest: later batches require finalized predecessors; unknown, failed and cancelled never count as paid
+ok 3 - later batches require finalized predecessors; unknown, failed and cancelled never count as paid
+  ---
+  duration_ms: 1.939291
+  type: 'test'
+  ...
+# Subtest: partial send and cancellation preserve sent records and release only never-broadcast inputs
+ok 4 - partial send and cancellation preserve sent records and release only never-broadcast inputs
+  ---
+  duration_ms: 8.586625
+  type: 'test'
+  ...
+# Subtest: malformed totals and overlapping batches are rejected before any durable write
+ok 5 - malformed totals and overlapping batches are rejected before any durable write
+  ---
+  duration_ms: 0.736417
+  type: 'test'
+  ...
+# Subtest: broadcast gate rejects unsigned private extrinsics before making any network request
+ok 6 - broadcast gate rejects unsigned private extrinsics before making any network request
+  ---
+  duration_ms: 0.705708
+  type: 'test'
+  ...
+# Subtest: privacy discovery restores external and change branches at a fixed checkpoint
+ok 7 - privacy discovery restores external and change branches at a fixed checkpoint
+  ---
+  duration_ms: 1.483583
+  type: 'test'
+  ...
+# Subtest: known high indices extend discovery beyond an empty gap, bounded scans remain incomplete
+ok 8 - known high indices extend discovery beyond an empty gap, bounded scans remain incomplete
+  ---
+  duration_ms: 0.474667
+  type: 'test'
+  ...
+# Subtest: lagging, partial, duplicate, foreign and wrong-checkpoint indexer responses fail closed
+ok 9 - lagging, partial, duplicate, foreign and wrong-checkpoint indexer responses fail closed
+  ---
+  duration_ms: 0.800708
+  type: 'test'
+  ...
+# Subtest: invalid derivation and hostile scan ranges are rejected
+ok 10 - invalid derivation and hostile scan ranges are rejected
+  ---
+  duration_ms: 0.242875
+  type: 'test'
+  ...
+# Subtest: cancellation during lookup cannot emit progress or return a successful recovery
+ok 11 - cancellation during lookup cannot emit progress or return a successful recovery
+  ---
+  duration_ms: 0.278083
+  type: 'test'
+  ...
+# Subtest: indexer adapter cannot mutate the pinned checkpoint or verified address objects
+ok 12 - indexer adapter cannot mutate the pinned checkpoint or verified address objects
+  ---
+  duration_ms: 0.145208
+  type: 'test'
+  ...
+# Subtest: durable preparation protects inputs, allocates change, and only pre-broadcast cancellation releases
+ok 13 - durable preparation protects inputs, allocates change, and only pre-broadcast cancellation releases
+  ---
+  duration_ms: 12.32775
+  type: 'test'
+  ...
+# Subtest: prepared plan mutation and failed durable writes never broadcast
+ok 14 - prepared plan mutation and failed durable writes never broadcast
+  ---
+  duration_ms: 1.79
+  type: 'test'
+  ...
+# Subtest: private success requires a finalized execution event and all nullifiers consumed
+ok 15 - private success requires a finalized execution event and all nullifiers consumed
+  ---
+  duration_ms: 1.373084
+  type: 'test'
+  ...
+# Subtest: proof absence never expires and failed broadcasts remain reserved
+ok 16 - proof absence never expires and failed broadcasts remain reserved
+  ---
+  duration_ms: 0.24475
+  type: 'test'
+  ...
+# Subtest: header digest follows SCALE vector encoding and rejects overflow
+ok 17 - header digest follows SCALE vector encoding and rejects overflow
+  ---
+  duration_ms: 0.348584
+  type: 'test'
+  ...
+# Subtest: real chain leaf can build a pinned witness with exact fee and change; reservations stop it
+ok 18 - real chain leaf can build a pinned witness with exact fee and change; reservations stop it
+  ---
+  duration_ms: 13.238917
+  type: 'test'
+  ...
+# Subtest: a cancelled proof preparation cannot be resurrected by a stale review
+ok 19 - a cancelled proof preparation cannot be resurrected by a stale review
+  ---
+  duration_ms: 1.071292
+  type: 'test'
+  ...
+# Subtest: real indexer adapter omits credentials and fails on errors or foreign checkpoints
+ok 20 - real indexer adapter omits credentials and fails on errors or foreign checkpoints
+  ---
+  duration_ms: 10.307833
+  type: 'test'
+  ...
+# Subtest: batched discovery keeps each address result independent and rejects a missing alias
+ok 21 - batched discovery keeps each address result independent and rejects a missing alias
+  ---
+  duration_ms: 3.150792
+  type: 'test'
+  ...
+# Subtest: Planck indexer is separated from mainnet and checks its own checkpoint
+ok 22 - Planck indexer is separated from mainnet and checks its own checkpoint
+  ---
+  duration_ms: 0.716292
+  type: 'test'
+  ...
+# Subtest: live mainnet proof verifies with official circuit hashing; tampering fails
+ok 23 - live mainnet proof verifies with official circuit hashing; tampering fails
+  ---
+  duration_ms: 2.013375
+  type: 'test'
+  ...
+# Subtest: scanner checks commitment and ownership before classifying funds, excludes reservations
+ok 24 - scanner checks commitment and ownership before classifying funds, excludes reservations
+  ---
+  duration_ms: 3.202125
+  type: 'test'
+  ...
+# Subtest: private extrinsic is encoded from pinned metadata as an unsigned verify_private_batch call
+ok 25 - private extrinsic is encoded from pinned metadata as an unsigned verify_private_batch call
+  ---
+  duration_ms: 20.029834
+  type: 'test'
+  ...
+# Subtest: encrypted private journal authenticates network and blocks resending ambiguous spends
+ok 26 - encrypted private journal authenticates network and blocks resending ambiguous spends
+  ---
+  duration_ms: 125.869875
+  type: 'test'
+  ...
+# Subtest: official WASM preserves canonical Quantus key derivation vectors
+ok 27 - official WASM preserves canonical Quantus key derivation vectors
+  ---
+  duration_ms: 7.987208
+  type: 'test'
+  ...
+# Subtest: legacy signing preserves the pre-148 upstream frozen extrinsic digest
+ok 28 - legacy signing preserves the pre-148 upstream frozen extrinsic digest
+  ---
+  duration_ms: 6.363166
+  type: 'test'
+  ...
+# Subtest: vault uses randomized authenticated encryption and non-extractable keys
+ok 29 - vault uses randomized authenticated encryption and non-extractable keys
+  ---
+  duration_ms: 221.130458
+  type: 'test'
+  ...
+# Subtest: wrong password, swapped metadata and modified ciphertext fail closed
+ok 30 - wrong password, swapped metadata and modified ciphertext fail closed
+  ---
+  duration_ms: 144.597708
+  type: 'test'
+  ...
+# Subtest: amount parser preserves 12-decimal precision and rejects ambiguous forms
+ok 31 - amount parser preserves 12-decimal precision and rejects ambiguous forms
+  ---
+  duration_ms: 0.334459
+  type: 'test'
+  ...
+# Subtest: address validation rejects checksum mutation, other networks, and noncanonical input
+ok 32 - address validation rejects checksum mutation, other networks, and noncanonical input
+  ---
+  duration_ms: 0.142917
+  type: 'test'
+  ...
+# Subtest: session invalidates in-flight actions on lock and expires even if timers were suspended
+ok 33 - session invalidates in-flight actions on lock and expires even if timers were suspended
+  ---
+  duration_ms: 0.132958
+  type: 'test'
+  ...
+# Subtest: chain identities and unreviewed runtime upgrades are rejected
+ok 34 - chain identities and unreviewed runtime upgrades are rejected
+  ---
+  duration_ms: 0.086708
+  type: 'test'
+  ...
+# Subtest: transfer uses keep-alive encoding, reserves fee and rechecks state
+ok 35 - transfer uses keep-alive encoding, reserves fee and rechecks state
+  ---
+  duration_ms: 5.950125
+  type: 'test'
+  ...
+# Subtest: worker signing allowlist rejects altered destination, amount, network and stale review
+ok 36 - worker signing allowlist rejects altered destination, amount, network and stale review
+  ---
+  duration_ms: 0.636709
+  type: 'test'
+  ...
+# Subtest: fee probe matches real signed envelope except signature bytes
+ok 37 - fee probe matches real signed envelope except signature bytes
+  ---
+  duration_ms: 6.259666
+  type: 'test'
+  ...
+# Subtest: RPC uses no credentials, rejects mismatched IDs and never retries a broadcast
+ok 38 - RPC uses no credentials, rejects mismatched IDs and never retries a broadcast
+  ---
+  duration_ms: 2.099375
+  type: 'test'
+  ...
+# Subtest: receipt status depends on finalized execution events, not broadcast acceptance
+ok 39 - receipt status depends on finalized execution events, not broadcast acceptance
+  ---
+  duration_ms: 0.431333
+  type: 'test'
+  ...
+# Subtest: release manifest exposes no webpages, external messaging, or broad host access
+ok 40 - release manifest exposes no webpages, external messaging, or broad host access
+  ---
+  duration_ms: 0.191833
+  type: 'test'
+  ...
+# Subtest: portable event codec preserves resolved success names omitted by raw toJSON
+ok 41 - portable event codec preserves resolved success names omitted by raw toJSON
+  ---
+  duration_ms: 1.063375
+  type: 'test'
+  ...
+# Subtest: send flow stores intent before broadcasting and never resends an unresolved transaction
+ok 42 - send flow stores intent before broadcasting and never resends an unresolved transaction
+  ---
+  duration_ms: 0.906334
+  type: 'test'
+  ...
+# Subtest: lost broadcast response persists uncertainty and blocks duplicate sends
+ok 43 - lost broadcast response persists uncertainty and blocks duplicate sends
+  ---
+  duration_ms: 0.479834
+  type: 'test'
+  ...
+# Subtest: a failed durable-intent write cannot lead to broadcasting
+ok 44 - a failed durable-intent write cannot lead to broadcasting
+  ---
+  duration_ms: 0.406209
+  type: 'test'
+  ...
+# Subtest: locking during durable-intent write cancels the send before any network write
+ok 45 - locking during durable-intent write cancels the send before any network write
+  ---
+  duration_ms: 0.659333
+  type: 'test'
+  ...
+# Subtest: review expiration during persistence is rechecked immediately before broadcast
+ok 46 - review expiration during persistence is rechecked immediately before broadcast
+  ---
+  duration_ms: 0.702666
+  type: 'test'
+  ...
+# Subtest: post-broadcast disk failure leaves the original pending intent recoverable
+ok 47 - post-broadcast disk failure leaves the original pending intent recoverable
+  ---
+  duration_ms: 0.609125
+  type: 'test'
+  ...
+# Subtest: checking history reloads the durable journal instead of overwriting it with a stale window
+ok 48 - checking history reloads the durable journal instead of overwriting it with a stale window
+  ---
+  duration_ms: 0.850583
+  type: 'test'
+  ...
+# Subtest: send and receipt checking share the same exclusive lease
+ok 49 - send and receipt checking share the same exclusive lease
+  ---
+  duration_ms: 0.6205
+  type: 'test'
+  ...
+# Subtest: RPC response size is limited while streaming, not after allocating the whole body
+ok 50 - RPC response size is limited while streaming, not after allocating the whole body
+  ---
+  duration_ms: 0.817208
+  type: 'test'
+  ...
+# Subtest: signing rejects zero, negative, inverted, and excessive fee reservations
+ok 51 - signing rejects zero, negative, inverted, and excessive fee reservations
+  ---
+  duration_ms: 0.312416
+  type: 'test'
+  ...
+# Subtest: backup choices contain one correct answer and five unique alternatives, including repeated words
+ok 52 - backup choices contain one correct answer and five unique alternatives, including repeated words
+  ---
+  duration_ms: 0.596042
+  type: 'test'
+  ...
+# Subtest: i18n defaults to English and preserves transaction data in translated labels
+ok 53 - i18n defaults to English and preserves transaction data in translated labels
+  ---
+  duration_ms: 1.360084
+  type: 'test'
+  ...
+# Subtest: mainnet transfer pins its own runtime, metadata and durable record
+ok 54 - mainnet transfer pins its own runtime, metadata and durable record
+  ---
+  duration_ms: 18.704917
+  type: 'test'
+  ...
+# Subtest: receipt checks reject another network before querying a node
+ok 55 - receipt checks reject another network before querying a node
+  ---
+  duration_ms: 0.106958
+  type: 'test'
+  ...
+# Subtest: privacy selection charges once per batch, keeps change, and excludes pending nullifiers
+ok 56 - privacy selection charges once per batch, keeps change, and excludes pending nullifiers
+  ---
+  duration_ms: 0.366625
+  type: 'test'
+  ...
+# Subtest: privacy amount accounting conserves inputs across batch boundaries and dust
+ok 57 - privacy amount accounting conserves inputs across batch boundaries and dust
+  ---
+  duration_ms: 0.75075
+  type: 'test'
+  ...
+# Subtest: eight-character passwords create and reopen a vault; seven characters are rejected
+ok 58 - eight-character passwords create and reopen a vault; seven characters are rejected
+  ---
+  duration_ms: 217.377083
+  type: 'test'
+  ...
+1..58
+# tests 58
+# suites 0
+# pass 58
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1162.673542

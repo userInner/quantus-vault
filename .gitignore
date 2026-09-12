@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.preview/
+.test-build/
+**/target/
+.DS_Store
+.env
+.env.*
+*.pem
+*.key
+# Local reference copies without a confirmed redistribution license.
+/reference/privacy-design/*.dart
+/reference/privacy-design/*.rs
+# Local build transcripts are not public release material.
+/verification/*
+!/verification/privacy-keys-build-info.json
+!/verification/privacy-live-scan.json
+!/verification/privacy-live-merkle.json
+!/verification/privacy-batches-tests.txt
+!/verification/private-send-ui-v015.txt
+!/verification/privacy-network-acceptance.json
+!/verification/privacy-planck-live.json
